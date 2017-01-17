@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+TemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Outputs the time
 Resources:
@@ -13,7 +13,7 @@ Resources:
           Properties:
             Path: /TimeResource6
             Method: GET
-	    RestApiId: !Ref MyAPI
+            RestApiId: !Ref MyAPI
   MyAPI:
     Type: AWS::Serverless::API
     Properties:
