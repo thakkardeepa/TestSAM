@@ -1,0 +1,15 @@
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: "MyBetaStack1"
+host: "qnh2ydtt0g.execute-api.us-west-2.amazonaws.com"
+basePath: "/Prod"
+schemes:
+- "https"
+paths:
+  /TimeResource:
+    get:
+      responses: {}
+  /TimeResource6:
+    get:
+      responses: {}
