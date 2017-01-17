@@ -13,7 +13,6 @@ Resources:
           Properties:
             Path: /TimeResource6
             Method: GET
-            RestApiId: !Ref MyAPI
   MyAPI:
     Type: AWS::Serverless::API
     Properties:
