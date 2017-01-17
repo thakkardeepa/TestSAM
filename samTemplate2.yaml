@@ -13,4 +13,4 @@ Resources:
           Properties:
             Path: /TimeResource6
             Method: GET
-            RestApiId: !ImportValue -RestAPI"
+            RestApiId: !ImportValue MyBetaStack-RestAPI

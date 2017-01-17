@@ -1,11 +1,14 @@
-version: 0.1
+Version: 0.1
 phases:
   install:
     commands:
       - npm install time
       - aws cloudformation package --template-file samTemplate1.yaml --s3-bucket testlambdact 
                                    --output-template-file NewSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate2.yaml --s3-bucket testlambdact
+                                   --output-template-file NewSamTemplate2.yaml
 artifacts:
   type: zip
   files:
     - NewSamTemplate.yaml
+    - NewSamTemplate2.yaml
