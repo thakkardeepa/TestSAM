@@ -14,7 +14,7 @@ Resources:
             Path: /TimeResource6
             Method: GET
   MyAPI:
-    Type: AWS::Serverless::API
+    Type: AWS::Serverless::Api
     Properties:
       StageName: prod
 Outputs:
