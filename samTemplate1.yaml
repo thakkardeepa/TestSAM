@@ -1,4 +1,4 @@
-TemplateFormatVersion: '2010-09-09'
+WSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Outputs the time
 Resources:
@@ -17,4 +17,9 @@ Resources:
     Type: AWS::Serverless::API
     Properties:
       StageName: prod
-      DefinitionUri: swagger.yml
+Outputs:
+  RestAPI:
+    Description: The ID of the RestAPI
+    Value: !Ref MyAPI
+    Export:
+      Name: !Sub "${AWS::StackName}-RestAPI"
