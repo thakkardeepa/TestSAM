@@ -3,6 +3,8 @@ phases:
   install:
     commands:
       - echo $test
+      - echo $CW
+      - echo https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/codebuild/$test
       - npm install time
       - aws cloudformation package --template-file samTemplate1.yaml --s3-bucket testlambdact 
                                    --output-template-file NewSamTemplate.yaml
