@@ -2,6 +2,7 @@ Version: 0.1
 phases:
   install:
     commands:
+      - echo $test
       - npm install time
       - aws cloudformation package --template-file samTemplate1.yaml --s3-bucket testlambdact 
                                    --output-template-file NewSamTemplate.yaml
