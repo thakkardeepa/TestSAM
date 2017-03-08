@@ -3,9 +3,9 @@ phases:
   install:
     commands:
       - echo $test
-      - test12="test ${CW} test"
+      - export test12="test ${CW} test"
       - echo $test12
-      - CWlink="https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/codebuild/${test}"
+      - export CWlink="https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logStream:group=/aws/codebuild/${test}"
       - echo $CWlink
       - npm install time
       - aws cloudformation package --template-file samTemplate1.yaml --s3-bucket testlambdact 
